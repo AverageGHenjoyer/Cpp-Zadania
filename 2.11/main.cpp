@@ -1,9 +1,8 @@
 #include <iostream>
 #include <iomanip>
-
+//Wykorzystuj operator bitowy &, aby sprawdzać, czy liczba nieujemna jest parzysta. Utwórz funkcję sprawdzającą w ten sposób parzystość i zwracającą true/false(parzysta/nieparzysta)
 bool is_even(int num){
-    if(num & 1 == 1){return false;}
-    else {return true;}
+    return !(num & 1);
 }
 
 int main(){
